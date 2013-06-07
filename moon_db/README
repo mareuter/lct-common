@@ -1,0 +1,8 @@
+This directory contains the ground work for creating the moon feature database
+which the application will use.
+
+The zip file contains the information set that the DB will be derived from. The 
+information was retrieved here: http://planetarynames.wr.usgs.gov.
+
+The shapefile.py script is useful for reading the original feature shapefile. This 
+was retrieved from: http://geospatialpython.com.
