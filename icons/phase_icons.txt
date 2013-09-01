@@ -1,0 +1,6 @@
+Current phase icon sizes:
+
+mdpi  32x32
+hdpi  48x48
+xdpi  64x64
+xxdpi 96x96
