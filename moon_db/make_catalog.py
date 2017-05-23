@@ -3,8 +3,8 @@
 import shapefile
 r = shapefile.Reader("MOON_nomenclature.shp")
 #sr = r.shapeRecords()
-#print sr[0].shape.points
-#print sr[0].record
+#print(sr[0].shape.points)
+#print(sr[0].record)
 
 ofile = open("initial_cat.txt", "w+")
 for sr in r.shapeRecords():
