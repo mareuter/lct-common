@@ -71,8 +71,8 @@ for sr in r.shapeRecords():
     if feature_name in feature_dict:
         feature_dia = sr.record[DIAMETER]
         feature_lat = sr.record[CENTER_LAT]
-        long = sr.record[CENTER_LONG]
-        feature_long = fix_longitude(long)
+        longitude = sr.record[CENTER_LONG]
+        feature_long = fix_longitude(longitude)
         feature_type = sr.record[FEATURE_TYPE].split(',')[0]
         feature_delta_lat = math.fabs(sr.record[MAX_LAT] - sr.record[MIN_LAT])
         feature_delta_long = math.fabs(sr.record[MAX_LONG] - sr.record[MIN_LONG])
