@@ -116,39 +116,42 @@ records.append(kies_pi)
 records.append(milichius_pi)
 
 # Adding records for lunar landing sites as only a couple are in the shapefile.
-# Feature diameter is set a longitudinal diameter and both that and latitude
-# diameter will be 0.01 km.
-luna2 = ("Luna 2", 0.01, 29.10, 0.00, 0.01, 0.01,
+# Feature diameter is set to 0.02 km. To find delta latitude and
+# delta longitude, the mean lunar radius of 1737.1 km was used and the given
+# diameter of the feature was used.
+site_diameter = 0.02
+site_delta = 0.001
+luna2 = ("Luna 2", site_diameter, 29.10, 0.00, site_delta, site_delta,
          "Landing Site", "Montes Apenninus", "LAC-41", "LunarII", None)
-luna9 = ("Luna 9", 0.01, 7.08, -64.37, 0.01, 0.01,
+luna9 = ("Luna 9", site_diameter, 7.08, -64.37, site_delta, site_delta,
          "Landing Site", "Hevelius", "LAC-56", "LunarII", None)
-luna13 = ("Luna 13", 0.01, 18.87, -62.05, 0.01, 0.01,
+luna13 = ("Luna 13", site_diameter, 18.87, -62.05, site_delta, site_delta,
           "Landing Site", "Seleucus", "LAC-38", "LunarII", None)
-luna16 = ("Luna 16", 0.01, -0.5137, 56.3638, 0.01, 0.01,
+luna16 = ("Luna 16", site_diameter, -0.5137, 56.3638, site_delta, site_delta,
           "Landing Site", "Langrenus", "LAC-80", "LunarII", None)
-luna17 = ("Luna 17", 0.01, 38.2376, -35.0016, 0.01, 0.01,
+luna17 = ("Luna 17", site_diameter, 38.2376, -35.0016, site_delta, site_delta,
           "Landing Site", "Sinus Iridum", "LAC-24", "LunarII", None)
-lunokhod1 = ("Lunokhod 1", 0.01, 38.3151, -35.0081, 0.01, 0.01,
+lunokhod1 = ("Lunokhod 1", site_diameter, 38.3151, -35.0081, site_delta, site_delta,
              "Landing Site", "Sinus Iridum", "LAC-24", "LunarII", None)
-luna20 = ("Luna 20", 0.01, 3.7863, 56.6242, 0.01, 0.01,
+luna20 = ("Luna 20", site_diameter, 3.7863, 56.6242, site_delta, site_delta,
           "Landing Site", "Mare Undarum", "LAC-62", "LunarII", None)
-luna21 = ("Luna 21", 0.01, 25.9994, 30.4077, 0.01, 0.01,
+luna21 = ("Luna 21", site_diameter, 25.9994, 30.4077, site_delta, site_delta,
           "Landing Site", "Macrobius", "LAC-43", "LunarII", None)
-lunokhod2 = ("Lunokhod 2", 0.01, 25.8323, 30.9221, 0.01, 0.01,
+lunokhod2 = ("Lunokhod 2", site_diameter, 25.8323, 30.9221, site_delta, site_delta,
              "Landing Site", "Macrobius", "LAC-43", "LunarII", None)
-luna24 = ("Luna 24", 0.01, 12.7145, 62.2129, 0.01, 0.01,
+luna24 = ("Luna 24", site_diameter, 12.7145, 62.2129, site_delta, site_delta,
           "Landing Site", "Mare Undarum", "LAC-62", "LunarII", None)
-apollo11 = ("Apollo 11", 0.01, 0.67, 23.49, 0.01, 0.01,
+apollo11 = ("Apollo 11", site_diameter, 0.67, 23.49, site_delta, site_delta,
             "Landing Site", "Julius Caesar", "LAC-60", "LunarII", None)
-apollo12 = ("Apollo 12", 0.01, -2.94, -23.45, 0.01, 0.01,
+apollo12 = ("Apollo 12", site_diameter, -2.94, -23.45, site_delta, site_delta,
             "Landing Site", "Montes Riphaeus", "LAC-76", "LunarII", None)
-apollo14 = ("Apollo 14", 0.01, -3.67, -17.64, 0.01, 0.01,
+apollo14 = ("Apollo 14", site_diameter, -3.67, -17.64, site_delta, site_delta,
             "Landing Site", "Montes Riphaeus", "LAC-76", "LunarII", None)
-apollo15 = ("Apollo 15", 0.01, 26.11, 3.66, 0.01, 0.01,
+apollo15 = ("Apollo 15", site_diameter, 26.11, 3.66, site_delta, site_delta,
             "Landing Site", "Montes Apenninus", "LAC-41", "LunarII", None)
-apollo16 = ("Apollo 16", 0.01, -8.60, 15.31, 0.01, 0.01,
+apollo16 = ("Apollo 16", site_diameter, -8.60, 15.31, site_delta, site_delta,
             "Landing Site", "Theophilus", "LAC-78", "LunarII", None)
-apollo17 = ("Apollo 17", 0.01, 20.17, 30.80, 0.01, 0.01,
+apollo17 = ("Apollo 17", site_diameter, 20.17, 30.80, site_delta, site_delta,
             "Landing Site", "Macrobius", "LAC-43", "LunarII", None)
 
 records.append(luna2)
